@@ -8,22 +8,38 @@ export default function Test() {
     <>  
               
     <div className="grid bg-black h-screen place-items-center w-screen wave  ">
-      <div className="flex w-[100%] h-[100%] gap-1 items-center justify-center">
-      <button className='text-black rounded-2xl  bg-white w-[10%]  h-[5%]  bg-theme'>
-               <Link to="/modal3" >Product Modal</Link>
+      <div className="flex w-[60%] h-[100%] gap-1 items-center justify-items-stretch">
+      <Link   className="rounded-2xl w-[20%]  h-[5%]  bg-white text-center" to="/modal3"   >
+      <button className='text-black rounded-2xl      '>
+              Product Modal
           </button>
-          <button className='text-black rounded-2xl  bg-white w-[10%]  h-[5%]  bg-theme'>
-               <Link to="/modal1" >Login Modal</Link>
+          </Link>
+          <Link   className="rounded-2xl w-[20%]  h-[5%]  bg-white text-center" to="/modal1" >
+          <button className='text-black rounded-2xl      '>
+              Login Modal
           </button>
-          <button className='text-black rounded-2xl  bg-white w-[10%]  h-[5%]  bg-theme'>
-               <Link to="/DashBoard" >Dashboard</Link>
+          </Link>
+          
+               <Link   className="rounded-2xl w-[20%]  h-[5%]  bg-white text-center" to="/DashBoard" >
+                    
+               <button className='text-black rounded-2xl      '>
+                    Dashboard
           </button>
-          <button className='text-black rounded-2xl  bg-white w-[10%]  h-[5%]  bg-theme'>
-               <Link to="modal2" >Cookies</Link>
+          </Link>
+          <Link   className="rounded-2xl w-[20%]  h-[5%]  bg-white text-center" to="modal2" >
+          <button className='text-black rounded-2xl      '>
+            Cookies
           </button>
-          <button className='text-black rounded-2xl  bg-white w-[10%]  h-[5%]  bg-theme'>
-               <Link to="/Auth" >Auth Page</Link>
-          </button>
+          </Link>
+          
+               <Link   className="rounded-2xl w-[20%]  h-[5%]  bg-white text-center" to="/Auth" >
+               <button className='text-black rounded-2xl      '>
+                    Auth Page
+     
+               </button>
+               </Link>
+           
+          
           
       </div>          
     </div>
