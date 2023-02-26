@@ -10,18 +10,18 @@ import Dove from '../styles/Dove.png'
 
 const DashoardLayout = ({ children }) => {
   return (
-    <div className="w-100 bg-white overflow-x-hidden  lg:pb-[0vh] md:pb-[0vh] sm:pb-[60vh] xs:pb-[60vh]">
-      <div className=" w-100 h-10 px-3  p-1 lg:mb-2 xs:mb-12 sm:mb-12 md:mb-20">
+    <div className="w-100   overflow-x-hidden  lg:pb-[0vh] md:pb-[0vh] sm:pb-[60vh] xs:pb-[60vh]">
+      <div className="bg-light w-100 h-10 px-3  p-1 lg:mb-0 xs:mb-12 sm:mb-12 md:mb-20">
       
-        <div className="flex w-100  ">
+        <div className="flex w-100 ">
            <img src={logo} className="w-8 h-8 " alt="" />
           <p className="text-black mt-1">AFTERLIFE.COM</p>
           <div className="w-[92%]  flex justify-end">
-            <span className="bg-theme  w-12 h-12 rounded-full mt-1 relative">
-              <MdNotificationImportant className="text-white w-8 h-8 absolute top-2 left-2" />
+            <span className="bg-theme  w-8 h-8 rounded-full mt-1 relative">
+              <MdNotificationImportant className="text-white w-6 h-6 absolute top-1 left-1.5" />
             </span>
             <img
-              className="w-12 h-12 m-1 mr-2 rounded-full border-theme border-2 z-120"
+              className="w-8 h-8 m-1 mr-2 rounded-full border-theme border-2 z-120"
               src={process.env.REACT_APP_AVATAR}
               alt=""
             />
@@ -31,8 +31,9 @@ const DashoardLayout = ({ children }) => {
       </div>
 
 
-      <div className="flex h-[90vh] w-[100vw]  border-0 lg:p-4 md:p-4 sm:p-0 xs:p-0   m-0">
-        <div className="w-[15%]  max-h-fit  sticky  overflow-hidden md:hidden xs:hidden sm:hidden lg:flex">
+      <div className="flex h-screen gap-2   w-[100vw]  border-0    m-0">
+     
+        <div className="w-[15%] bg-light rounded-lg  min-h-screen  sticky  overflow-hidden md:hidden xs:hidden sm:hidden lg:flex">
           <div className="p-0 w-full  h-screen ">
             <div className="grid  grid-cols-1 items-center my-4 gap-y-3 place-items-center ">
               <div className="flex">
@@ -97,10 +98,10 @@ const DashoardLayout = ({ children }) => {
           </div>
         </div>
 
-        <div className="flex-1  bg-fixed     w-[100%] h-[100%]  relative  overflow-x-auto lg:pb-[0vh] md:pb-[0vh] sm:pb-[60vh] xs:pb-[60vh]">
-          <div className="flex overflow-hidden lg:flex-row md:flex-row-reverse sm:flex-col-reverse xs:flex-col-reverse w-[100%]  justify-center gap-2">
+        <div className="flex-1  bg-fixed  rounded-2xl z-50    w-[100%] h-[100%]  relative  overflow-x-auto lg:pb-[0vh] md:pb-[0vh] sm:pb-[60vh] xs:pb-[60vh]">
+          <div className="flex overflow-hidden shadow-inner lg:flex-row md:flex-row-reverse sm:flex-col-reverse xs:flex-col-reverse w-[100%]  justify-center gap-2">
    
-            <div className="w-[100%] mixpattern border-2   text-black rounded-2xl h-[25vh] ">
+            <div className="w-[100%] z- border-2  mt-1   text-black rounded-2xl h-[25vh] ">
               <div className="flex relative w-[100%] h-[90%]  mt-3">
            
                 <div className="relative w-[50%]  rotate-360  h-[100%]">
@@ -111,11 +112,11 @@ const DashoardLayout = ({ children }) => {
                   </div>
                 </div>
                 
-                <div className="mt-2 flex-col flex grow-0 w-[60%] justify-start p-2">
+                <div className="mt-2 flex-col flex grow-0 w-[60%] justify-start p-0">
                   <h1 className=' p-0 lg:float-left float-left   xs:text-3xl sm:text-2xl md:text-2xl lg:text-4xl '>
                     BEST SELLING
                   </h1>
-                  <p className='  text-[13px]'>
+                  <p className='  text-[11px]'>
                     Sally offers advice on how to compose a meaningful and creative message in tribute of the a beloved who recently lost loved ones.
                   </p>
                 </div>
@@ -129,11 +130,11 @@ const DashoardLayout = ({ children }) => {
                   <img src={Dove}  className='w-[90%]  h-[90%] w-max-w-[100%] w-max-h-[100%] '   alt="" />
                 </div>
                 
-                <div className="mt-2 flex-col flex grow-0 w-[60%] justify-start p-2">
+                <div className="mt-2 flex-col flex grow-0 w-[60%] justify-start p-0">
                   <h1 className='text-white p-0 lg:float-left float-left   xs:text-3xl sm:text-2xl md:text-2xl lg:text-4xl '>
                     Sally
                   </h1>
-                  <p className=' text-white  text-[16px]'>
+                  <p className=' text-white  text-[12px]'>
                     Sally offers advice on how to compose a meaningful and creative message in tribute of the a beloved who recently lost loved ones.
                   </p>
                 </div>
