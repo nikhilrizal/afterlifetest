@@ -17,7 +17,7 @@ const DashoardLayout = ({ children }) => {
            <img src={logo} className="w-8 h-8 " alt="" />
           <p className="text-black mt-1">AFTERLIFE.COM</p>
           <div className="w-[92%]  flex justify-end">
-            <span className="bg-theme  w-8 h-8 rounded-full mt-1 relative">
+            <span className="bg-theme  w-8 h-8 rounded--full mt-1 relative">
               <MdNotificationImportant className="text-white w-6 h-6 absolute top-1 left-1.5" />
             </span>
             <img
@@ -31,9 +31,9 @@ const DashoardLayout = ({ children }) => {
       </div>
 
 
-      <div className="flex h-screen gap-2   w-[100vw]  border-0    m-0">
+      <div className="flex h-screen z-10   w-[100vw]  border-0    m-0">
      
-        <div className="w-[15%] bg-light rounded-lg  min-h-screen  sticky  overflow-hidden md:hidden xs:hidden sm:hidden lg:flex">
+        <div className="w-[15%] bg-light   min-h-screen  sticky  overflow-hidden md:hidden xs:hidden sm:hidden lg:flex">
           <div className="p-0 w-full  h-screen ">
             <div className="grid  grid-cols-1 items-center my-4 gap-y-3 place-items-center ">
               <div className="flex">
@@ -98,10 +98,10 @@ const DashoardLayout = ({ children }) => {
           </div>
         </div>
 
-        <div className="flex-1  bg-fixed  rounded-2xl z-50    w-[100%] h-[100%]  relative  overflow-x-auto lg:pb-[0vh] md:pb-[0vh] sm:pb-[60vh] xs:pb-[60vh]">
-          <div className="flex overflow-hidden shadow-inner lg:flex-row md:flex-row-reverse sm:flex-col-reverse xs:flex-col-reverse w-[100%]  justify-center gap-2">
+        <div className="flex-1  bg-fixed  shadow-2xl  rounded-2xl z-50    w-[100%] h-[100%]  relative  overflow-x-auto lg:pb-[0vh] md:pb-[0vh] sm:pb-[60vh] xs:pb-[60vh]">
+          <div className="flex m-2 overflow-hidden  lg:flex-row md:flex-row-reverse sm:flex-col-reverse xs:flex-col-reverse w-[100%]  justify-center gap-2">
    
-            <div className="w-[100%] z- border-2  mt-1   text-black rounded-2xl h-[25vh] ">
+            <div className="w-[100%] z-20  mt-1 border-slate-200 border-2  text-black rounded-2xl h-[25vh] ">
               <div className="flex relative w-[100%] h-[90%]  mt-3">
            
                 <div className="relative w-[50%]  rotate-360  h-[100%]">
@@ -112,7 +112,7 @@ const DashoardLayout = ({ children }) => {
                   </div>
                 </div>
                 
-                <div className="mt-2 flex-col flex grow-0 w-[60%] justify-start p-0">
+                <div className="mt-2 flex-col  flex grow-0 w-[60%] justify-start p-0">
                   <h1 className=' p-0 lg:float-left float-left   xs:text-3xl sm:text-2xl md:text-2xl lg:text-4xl '>
                     BEST SELLING
                   </h1>
