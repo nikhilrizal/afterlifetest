@@ -11,7 +11,8 @@ import Dove from '../styles/Dove.png'
 const DashoardLayout = ({ children }) => {
   return (
     <div className="w-100 bg-white overflow-x-hidden  lg:pb-[0vh] md:pb-[0vh] sm:pb-[60vh] xs:pb-[60vh]">
-      <div className=" w-100 h-10 px-3  p-1">
+      <div className=" w-100 h-10 px-3  p-1 lg:mb-2 xs:mb-12 sm:mb-12 md:mb-20">
+      
         <div className="flex w-100  ">
            <img src={logo} className="w-8 h-8 " alt="" />
           <p className="text-black mt-1">AFTERLIFE.COM</p>
@@ -28,6 +29,8 @@ const DashoardLayout = ({ children }) => {
           </div>
         </div>
       </div>
+
+
       <div className="flex h-[90vh] w-[100vw]  border-0 lg:p-4 md:p-4 sm:p-0 xs:p-0   m-0">
         <div className="w-[15%]  max-h-fit  sticky  overflow-hidden md:hidden xs:hidden sm:hidden lg:flex">
           <div className="p-0 w-full  h-screen ">
@@ -94,49 +97,50 @@ const DashoardLayout = ({ children }) => {
           </div>
         </div>
 
-        <div className="flex-1  bg-fixed   bg-light-gray  h-[100%]  relative  overflow-x-auto lg:pb-[0vh] md:pb-[0vh] sm:pb-[60vh] xs:pb-[60vh]">
+        <div className="flex-1  bg-fixed     w-[100%] h-[100%]  relative  overflow-x-auto lg:pb-[0vh] md:pb-[0vh] sm:pb-[60vh] xs:pb-[60vh]">
           <div className="flex overflow-hidden lg:flex-row md:flex-row-reverse sm:flex-col-reverse xs:flex-col-reverse w-[100%]  justify-center gap-2">
-            <div className="w-[90%] bg-[#3371c8] rounded-2xl h-[25vh] items-center">
-              <div className="flex relative items-center w-100 h-[90%] p-4 mt-3">
-
-
-                <div className="relative w-[40%]   rotate-360 h-[100%]">
-                  {/* <img className='sally rounded-lg ' src='https://vignette.wikia.nocookie.net/dumbledoresarmyroleplay/images/c/c4/Dove.gif/revision/latest?cb=20180707174946'  alt="" /> */}
-                  {/* <img  className='sally rounded-lg text-white' src='https://img.icons8.com/dotty/80/null/dove.png' /> */}
+   
+            <div className="w-[100%] mixpattern border-2   text-black rounded-2xl h-[25vh] ">
+              <div className="flex relative w-[100%] h-[90%]  mt-3">
+           
+                <div className="relative w-[50%]  rotate-360  h-[100%]">
+                  <div className="flex justify-center "> 
+              
                 
-                  <img src={Dove}  className='sally rounded-lg absolute -left-5 -bottom-5 mt-2'   alt="" />
+                  <img className='absolute w-fit   h-full w-max-w-[100%] w-max-h-[100%]' src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-funeral-service-invite-flyer-design-template-c7a702b3b17584bde5dc8cecf071fcbb.jpg?ts=1636988155" alt="" srcset="" />
+                  </div>
                 </div>
                 
-                <div className="mt-2 w-[100%] float-right">
-                  <h1 className='text-white text-5xl '>
-                    Sally
-                    
+                <div className="mt-2 flex-col flex grow-0 w-[60%] justify-start p-2">
+                  <h1 className=' p-0 lg:float-left float-left   xs:text-3xl sm:text-2xl md:text-2xl lg:text-4xl '>
+                    BEST SELLING
                   </h1>
-                  <p className='p-3 text-white  '>
+                  <p className='  text-[13px]'>
                     Sally offers advice on how to compose a meaningful and creative message in tribute of the a beloved who recently lost loved ones.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="w-[90%] bg-[#02090c] rounded-2xl h-[25vh] items-center">
-              <div className="flex items-center w-100 h-[90%] p-4 mt-3">
-                <div className="mt-2">
-                  <h1 className='text-white text-2xl float-left'>
-
-                    BEST SELLING
-                  </h1>
-                  <p className='p-3 text-slate-400 '>
-                    Documentation and examples for common text utilities to control alignment, wrapping, weight, and more.
-                  </p>
+              <div className="w-[100%] bg-[#3371c8] wave rounded-2xl h-[25vh] ">
+              <div className="flex relative w-[100%] h-[90%]  mt-3">
+            
+                <div className="relative w-[50%]  rotate-360 h-[100%]">
+                  <img src={Dove}  className='w-[90%]  h-[90%] w-max-w-[100%] w-max-h-[100%] '   alt="" />
                 </div>
-                <div className=" w-60 relative ">
-                  <img className=' absolute rounded-lg -z-5 a mr-2' src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-funeral-service-invite-flyer-design-template-c7a702b3b17584bde5dc8cecf071fcbb.jpg?ts=1636988155" alt="" srcset="" />
-                  <img className='   top-0 rotate-12  a z-5  rounded-lg mr-2' src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-funeral-service-invite-flyer-design-template-c7a702b3b17584bde5dc8cecf071fcbb.jpg?ts=1636988155" alt="" srcset="" />
-
+                
+                <div className="mt-2 flex-col flex grow-0 w-[60%] justify-start p-2">
+                  <h1 className='text-white p-0 lg:float-left float-left   xs:text-3xl sm:text-2xl md:text-2xl lg:text-4xl '>
+                    Sally
+                  </h1>
+                  <p className=' text-white  text-[16px]'>
+                    Sally offers advice on how to compose a meaningful and creative message in tribute of the a beloved who recently lost loved ones.
+                  </p>
                 </div>
               </div>
             </div>
+
+
           </div>
           {children}
         </div>

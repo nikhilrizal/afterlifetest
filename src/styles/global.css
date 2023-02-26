@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.mixpattern {
+  background-image: url('./pattern.svg');
+  background-position-x: 61%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+}
+.wave {
+  background-image: url('./svg.png');
+  background-position-x: 61%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
 .flip-box {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -11,8 +28,7 @@
   max-width: 120em !important;
   width: 14em !important;
   position: absolute;
-  right: -55px;
-  top: -35px;
+
   
 }
 .a {

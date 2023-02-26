@@ -15,13 +15,13 @@ const LoginPage = () => {
   return (
     <>
       <div className="w-[90%] ">
-        <h1 className="text-4xl text-black text-[30px] font-bold inline-block">
+        <h1 className="text-4xl  text-theme text-[30px] font-bold inline-block">
 
           Login in
         </h1>
-        <HiLogin className="inline-block rotate-180"> </HiLogin>
+        <HiLogin className="inline-block text-theme rotate-180"> </HiLogin>
         <Link to="/Auth/Signup">
-          <span className="text-sm"> Sign up </span>
+          <span className="text-sm text-theme"> Sign up </span>
         </Link>
       </div>
       <input
@@ -40,18 +40,18 @@ const LoginPage = () => {
         name="search"
         required
       />
-      <Link className="text-blue-600" to="/Auth/restpassword">
+      <Link className="text-theme" to="/Auth/restpassword">
         Forgot password ?
       </Link>
       <div className="flex flex-col justify-center lg:w-[100%] xs:w-[80vw] sm:w-[100vw] md:w-[100vw] my-4">
         <button
-          className="bg-blue-600 w-[100%] h-[6vh] my-2  rounded-md text-white "
+          className="bg-theme w-[100%] h-[6vh] my-2  rounded-md text-white "
           onClick={() => handelLogin()}
         >
           Login in
         </button>
         <button
-          className="bg-[#563ede] w-[100%] h-[6vh]  flex justify-center   my-2 p-2  rounded-md text-white "
+          className="bg-theme w-[100%] h-[6vh]  flex justify-center   my-2 p-2  rounded-md text-white "
           onClick={() => handelLogin()}
         >
           <svg

@@ -1,13 +1,13 @@
 import cookie from './../../../styles/icons/cookie.jpg'
 import CoreModal from './CoreModal'
-const Cookies = () => {
-
+const Cookies = (props) => {
+  let { setIsOpen, isOpen } = props;
   return (
-    <CoreModal> 
+    <CoreModal isOpen={isOpen} setIsOpen={setIsOpen}> 
     
       <div className=" transform overflow-hidden w-[50vh] h-[60vh] max-w-md  relative rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
         <div className="flex flex-col justify-center items-center h-[80%] w-[100%] ">
-          <img className='lg:w-25 md:w-25 xs:w-45 sm:w-45  lg:h-20 md:h-35  sm:h-35 xs:h-35' src={cookie} alt="" srcset="" />
+          <img className='lg:w-35vw md:w-25 xs:w-45 sm:w-45  lg:h-20vh md:h-35  sm:h-35 xs:h-35' src={cookie} alt="" srcset="" />
           <h1 className='text-center text-black font-extrabold text-4xl'>
             Cookies !
           </h1>

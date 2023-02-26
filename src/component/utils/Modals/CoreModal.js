@@ -19,6 +19,7 @@ export default function CustModal({children,isOpen, setIsOpen}) {
 
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative  z-10" onClose={closeModal}>
+          
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -43,6 +44,9 @@ export default function CustModal({children,isOpen, setIsOpen}) {
                 leaveTo="opacity-0 scale-95"
               >
                 <div className='relative '>
+                <img className="absolute -top-2 -left-5 z-10" src="https://www.digitalocean.com/_next/static/media/coral-cta-top.89e13f0f.svg" alt="" />
+                <img className="absolute -bottom-4 -right-5 z-10" src="https://www.digitalocean.com/_next/static/media/coral-cta-bottom.b2063e35.svg" alt="" />
+
                 <span className=' absolute z-30 -top-10 rounded-full bg-[#2222] w-8 h-8 right-0' onClick={closeModal}> 
                 <IoMdCloseCircle className='w-4 h-4 absolute top-2 left-2 text-white'/>
                 </span>
