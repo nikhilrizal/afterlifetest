@@ -9,30 +9,30 @@ export default function Test() {
               
     <div className="grid bg-black h-screen place-items-center w-screen wave  ">
       <div className="flex w-[60%] h-[100%] gap-1 items-center justify-items-stretch">
-      <Link   className="rounded-2xl w-[20%]  h-[5%]  bg-white text-center" to="/modal3"   >
+      <Link   className="rounded-2xl w-[20%]  h-[5%]  bg-white text-center p-2" to="/modal3"   >
       <button className='text-black rounded-2xl      '>
               Product Modal
           </button>
           </Link>
-          <Link   className="rounded-2xl w-[20%]  h-[5%]  bg-white text-center" to="/modal1" >
+          <Link   className="rounded-2xl w-[20%]  h-[5%]  bg-white text-center p-2" to="/modal1" >
           <button className='text-black rounded-2xl      '>
               Login Modal
           </button>
           </Link>
           
-               <Link   className="rounded-2xl w-[20%]  h-[5%]  bg-white text-center" to="/DashBoard" >
+               <Link   className="rounded-2xl w-[20%]  h-[5%]  bg-white text-center p-2" to="/DashBoard" >
                     
                <button className='text-black rounded-2xl      '>
                     Dashboard
           </button>
           </Link>
-          <Link   className="rounded-2xl w-[20%]  h-[5%]  bg-white text-center" to="modal2" >
+          <Link   className="rounded-2xl w-[20%]  h-[5%]  bg-white text-center p-2" to="modal2" >
           <button className='text-black rounded-2xl      '>
             Cookies
           </button>
           </Link>
           
-               <Link   className="rounded-2xl w-[20%]  h-[5%]  bg-white text-center" to="/Auth" >
+               <Link   className="rounded-2xl w-[20%]  h-[5%]  bg-white text-center p-2" to="/Auth" >
                <button className='text-black rounded-2xl      '>
                     Auth Page
      
