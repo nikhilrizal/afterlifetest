@@ -2,37 +2,20 @@ import React from "react";
 
 import { AiFillSetting } from "react-icons/ai";
 import { HiOutlineTemplate } from "react-icons/hi";
-import {MdSupportAgent,MdOutlineDesignServices,MdNotificationImportant,} from "react-icons/md";
-import logo from "../styles/icons/logo.png";
+import {MdSupportAgent,MdOutlineDesignServices,} from "react-icons/md";
+
 import SimpleSlider from "../component/slickman";
 import {  Link, NavLink } from "react-router-dom";
 import Dove from '../styles/Dove.png'
+import MenuBar from "../component/Customer/MenuBar";
+import MenuItems from "../component/Customer/MenuItems";
 
 const DashoardLayout = ({ children }) => {
   return (
     <div className="w-100   overflow-x-hidden  lg:pb-[0vh] md:pb-[0vh] sm:pb-[60vh] xs:pb-[60vh]">
-      <div className="bg-light w-100 h-10 px-3  p-1 lg:mb-0 xs:mb-12 sm:mb-12 md:mb-20">
-      
-        <div className="flex w-100 ">
-           <img src={logo} className="w-8 h-8 " alt="" />
-          <p className="text-black mt-1">AFTERLIFE.COM</p>
-          <div className="w-[92%]  flex justify-end">
-            <span className="bg-theme  w-8 h-8 rounded-full mt-1 relative">
-              <MdNotificationImportant className="text-white w-6 h-6 absolute top-1 left-1" />
-            </span>
-            <img
-              className="w-8 h-8 m-1 mr-2 rounded-full border-theme border-2 z-120"
-              src={process.env.REACT_APP_AVATAR}
-              alt=""
-            />
-
-          </div>
-        </div>
-      </div>
-
-
+      <MenuBar/>
       <div className="flex h-screen z-10   w-[100vw]  border-0    m-0">
-     
+    
         <div className="w-[15%] bg-light   min-h-screen  sticky  overflow-hidden md:hidden xs:hidden sm:hidden lg:flex">
           <div className="p-0 w-full  h-screen ">
             <div className="grid  grid-cols-1 items-center my-4 gap-y-3 place-items-center ">
@@ -49,49 +32,9 @@ const DashoardLayout = ({ children }) => {
               <div className="">
 
                 <div className=" flex-row w-[100%] p-2 ">
-                <div className="flex  mt-5 text-gray-500 justify-center    w-[100%] transition: ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300  ">
-                  <Link className="w-[100%]" to='/Dashboard'>
-                    <div className="flex hover:bg-[#00bfff21] hover:text-[#00bfffde] text-center items-center rounded-lg h-8 w-[100%]">
-                      <MdOutlineDesignServices className="w-5 h-5  " />
-                      <p className="ml-2 text-[11px] font-bold">
-                        Orders
-                      </p>
-                    </div>
-                    </Link>
-                  </div>
-
-                  <div className="flex  mt-5 text-gray-500 justify-center    w-[100%] transition: ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300  ">
-                    <div className="flex hover:bg-[#00bfff21] hover:text-[#00bfffde] text-center items-center rounded-lg h-8 w-[100%] ">
-                      <HiOutlineTemplate className="w-5 h-5  " />
-                      <p className="ml-2 font-bold">Products</p>
-                    </div>
-                  </div>
-                  <div className="flex  mt-5 text-gray-500 justify-center    w-[100%] transition: ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300  ">
-                  <NavLink  className={({ isActive }) => (isActive ? "bg-[#00bfff21] rounded-lg text-[#00bfffde]" : "")} to='RecentWork'>
-                    <div className="flex hover:bg-[#00bfff21] hover:text-[#00bfffde] text-center items-center rounded-lg h-8 w-[100%]">
-                      <MdOutlineDesignServices className="w-5 h-5  " />
-                      <p className="ml-2 text-[11px] font-bold">
-                   
-                        Recent Design
-                   
-                        
-                      </p>
-                    
-                    </div>
-                    </NavLink>
-                  </div>
-                  <div className="flex  mt-5 text-gray-500 justify-center    w-[100%] transition: ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300  ">
-                    <div className="flex hover:bg-[#00bfff21] hover:text-[#00bfffde] text-center items-center rounded-lg h-8 w-[100%]">
-                      <MdSupportAgent className="w-5 h-5  " />
-                      <p className="ml-2 font-bold">Customer</p>
-                    </div>
-                  </div>
-                  <div className="flex  mt-5 text-gray-500 justify-center    w-[100%] transition: ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300  ">
-                    <div className="flex hover:bg-[#00bfff21] hover:text-[#00bfffde] text-center items-center rounded-lg h-8 w-[100%]">
-                      <AiFillSetting className="w-5 h-5  " />
-                      <p className="ml-2 font-bold">Settings</p>
-                    </div>
-                  </div>
+                <div className="bg-light w-100 h-12 px-3 relative rounded-b-xl  p-1 lg:mb-0 xs:mb-12 sm:mb-12 md:mb-20">
+                      <MenuItems/>
+                      </div>
                 </div>
               </div>
             </div>

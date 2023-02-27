@@ -32,6 +32,7 @@ function App() {
           <Route path="Dashboard" element={<Dashboard />}>
             <Route index element={<OrdersPage />} />
             <Route path="RecentWork" element={<RecentsDesign />} />
+            <Route path="Customer" element={<RecentsDesign />} />
           </Route>
           <Route index  element={<Test />} />
           <Route path='modal1' element={<RegistrationModal  isOpen={isOpen} setIsOpen={setIsOpen}/>} />
