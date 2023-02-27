@@ -5,8 +5,8 @@ import Dove from '../styles/Dove.png'
 const AuthLayout = ({ children }) => {
   return (
     
-    <div className="h-screen w-screen bg-white flex">
-      <section className="h-[100%] bg-white lg:w-[30%]  md:w-[100%] sm:w-[100%] xs:w-[100%] flex items-center relative">
+    <div className="h-[90vh] w-screen bg-white flex">
+      <section className="h-[90%] overflow-hidden p-0 bg-white lg:w-[30%]  mixpattern md:w-[100%] sm:w-[100%] xs:w-[100%] flex items-center relative">
         <div className="text-black text-[20px] p-3 absolute  w-[100%]   top-0">
           <h1 className="text-black text-[20px] font-bold   inline-block float-left">
             nubisafterlife
@@ -15,14 +15,14 @@ const AuthLayout = ({ children }) => {
             Learn More
           </a>
         </div>
-        <div className="flex flex-col w-[100%] text-black h-[50%]   p-10">
+        <div className="flex flex-col  w-[100%] text-black h-[50%]    p-10">
 
           {children}
        
         </div>
       </section>
-      <section className="h-[100%]  bg-red-900   lg:flex md:hidden sm:hidden xs:hidden   w-[70%] flex items-center relative">
-        <div className="h-[90vh]   flex  justify-center items-center w-[100%]" >
+      <section className="h-[100%]    lg:flex md:hidden sm:hidden xs:hidden   w-[70%] flex items-center relative">
+        <div className="h-[100%]   flex  justify-center items-center w-[100%]" >
           <section className="relative justify-center  lg:w-[90%] md:w-full sm:w-full p-14 xs:w-full lg:h-[96%]  bg-[#00000070] opacity-100 rounded-3xl  md:h-1/2 sm:h-[60%] xs:h-[60%]" >
             <div className="absolute text-center p-2 -right-7 top-1/4 rounded-full w-[4rem] h-[4rem] bg-white text-black">
               <FaHandshake className='text-2xl text-yellow-400 text-[3rem]' />

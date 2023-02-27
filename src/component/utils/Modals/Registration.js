@@ -7,7 +7,7 @@ const RegistrationModal = (props) => {
   let { setIsOpen, isOpen } = props;
   return (
     <CustModal isOpen={isOpen} setIsOpen={setIsOpen}>
-      <div className=" transform flex items-center flex-col overflow-hidden w-[57vh] h-[80vh] max-w-md  relative rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+      <div className=" transform flex items-center flex-col overflow-hidden w-fit h-[80vh] max-w-md  relative rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
         <div className="flex items-center flex-col w-[100%] justify-center  h-[90%]">
           <h1 className="text-center text-black font-extrabold text-2xl w-[100%] px-7">
             Unlock 20K + Mockup Design by Signing up

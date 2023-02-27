@@ -25,16 +25,16 @@ const LoginPage = () => {
         </Link>
       </div>
       <input
-        inputMode="numeric"
-        className="lg:w-[100%]  my-6 border-b-2 border-slate-300 md:w-[90%]  sm:w-[100%] xs:w-[100%] inline-block text-[10px] relative xs:text-[20px] sm:text-[15px] placeholder:italic text-left  placeholder:text-slate-400   bg-transparent   focus:outline-none focus:border-white focus:border-b-0  "
+        inputMode="email"
+        className="lg:w-[100%]  my-6 border-b-2 border-slate-300 md:w-[90%]  sm:w-[100%] xs:w-[100%] inline-block text-[10px] relative xs:text-[20px] sm:text-[15px] placeholder:italic text-left  placeholder:text-slate-400   bg-transparent   focus:outline-none focus:border-theme focus:border-b-2  "
         placeholder="Email"
         type="email"
         name="search"
         required
       />
       <input
-        inputMode="numeric"
-        className="lg:w-[100%] my-6 border-b-2 border-slate-300 md:w-[90%]  sm:w-[100%] xs:w-[100%] inline-block text-[10px] relative xs:text-[20px] sm:text-[15px] placeholder:italic   placeholder:text-slate-400   bg-transparent   focus:outline-none focus:border-white focus:border-b-0  "
+        inputMode="text"
+        className="lg:w-[100%] my-6 border-b-2 border-slate-300 md:w-[90%]  sm:w-[100%] xs:w-[100%] inline-block text-[10px] relative xs:text-[20px] sm:text-[15px] placeholder:italic   placeholder:text-slate-400   bg-transparent   focus:outline-none focus:border-theme focus:border-b-2 "
         placeholder="Password"
         type="text"
         name="search"

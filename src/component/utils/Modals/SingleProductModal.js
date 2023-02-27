@@ -6,7 +6,7 @@ const SingleProductModal = (props) => {
   let { setIsOpen, isOpen } = props;
   return (
     <CustModal isOpen={isOpen} setIsOpen={setIsOpen}>
-      <div className=" transform overflow-hidden w-[420vw]  lg:h-[80vh] md:h-[80vh] sm:h-[50vh] xs:h-[60vh]  lg:max-w-[65vw] md:max-w-[65vw] xs:w-[90vw] sm:w-[90vw]  relative rounded-2xl bg-white p-0 text-left align-middle shadow-xl transition-all">
+      <div className=" transform overflow-hidden   lg:h-[80vh] md:max-h-fullsm:max-h-full xs:max-h-full  lg:max-w-[65vw] md:max-w-[65vw] xs:w-[90vw] sm:w-[90vw]  relative rounded-2xl bg-white p-0 text-left align-middle shadow-xl transition-all">
       
         <div className="flex  lg:flex-row md:flex-row  sm:flex-col xs:flex-col  h-[100%]  gap-1">
        
@@ -14,12 +14,12 @@ const SingleProductModal = (props) => {
          <div className="relative">
          
    
-          <video  className="rounded-3xl  shadow-lg z-10 text-center m-auto " width="450" height="700" dataQa="media-player" dataTestid="media-player-video" id="player" loop="loop"  playSinline="" preload="auto" src="https://media.videoask.com/transcoded/e9bf51a3-56ec-4871-942c-c4949cfef374/video.mp4?token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZWRpYV9pZCI6ImU5YmY1MWEzLTU2ZWMtNDg3MS05NDJjLWM0OTQ5Y2ZlZjM3NCIsImV4cCI6MTY3NzMwNDQ5M30.HKe4_Rd1t722JCnfGvddc5pIrpvOSb-xsGR8vpYYo3xP3NXYjyV_0HLdIHDlw_PZxyWTQ77GeXbMgMUQjw0UA0MaTf_A1BXwCQkORr67jiNNz5hOItocf41xUbBEM1K0HszSOapHttSnueK_VTcDu76GViGEceGuYiSaHksdejQzclVL-fB92pk3w1vFic71NuCfJgj563fYNyBNHkHLYmJKqh5woilvuKC238__7C1ArkfGDYd4KDJ6YL0zobirsdWKybWSetC5sFpv8c30899g0q-J89GE1NkS9ndRDOJi_iUj5npA9Lhf3cbh_hajAS_zDPiX0pFaICAfJQk3S0Q0NVJW7izw793kGOQsx4hIRoZp9gwzCZMGDgkfpgw9Bxe4m1cS-NrxJgjgFnGY_BJMiuBVXLfLYXaB3I4aFTKfI2HP3m4tYJn4rFsGmibSGkO4mhc-_7nuM7cmFpBxYlOz9QXQZqYEkm7HR9KyJ8fq_L_wH-Ql1ithoODP28aiszYDDI4G8WAfBbtRxhXhgOploW_7-SjKxSDkIl_-JnrIrC7QK_CHm_ZRYFPugw1FfZRAkA24omoXdsmSznwyOrmIt26VG1Id59bqiN_NlMOQ-_e6k_ph76e2FX0NI80V897mUGOyJ24mchAiKIYK-mrM2Zmp4U95ZQKSLSk43Gw" />
+          <video autoPlay  className="rounded-3xl  shadow-lg z-10 text-center m-auto " width="450" height="700" dataQa="media-player" dataTestid="media-player-video" id="player" loop="loop"  playSinline="" preload="auto" src="https://media.videoask.com/transcoded/e9bf51a3-56ec-4871-942c-c4949cfef374/video.mp4?token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZWRpYV9pZCI6ImU5YmY1MWEzLTU2ZWMtNDg3MS05NDJjLWM0OTQ5Y2ZlZjM3NCIsImV4cCI6MTY3NzMwNDQ5M30.HKe4_Rd1t722JCnfGvddc5pIrpvOSb-xsGR8vpYYo3xP3NXYjyV_0HLdIHDlw_PZxyWTQ77GeXbMgMUQjw0UA0MaTf_A1BXwCQkORr67jiNNz5hOItocf41xUbBEM1K0HszSOapHttSnueK_VTcDu76GViGEceGuYiSaHksdejQzclVL-fB92pk3w1vFic71NuCfJgj563fYNyBNHkHLYmJKqh5woilvuKC238__7C1ArkfGDYd4KDJ6YL0zobirsdWKybWSetC5sFpv8c30899g0q-J89GE1NkS9ndRDOJi_iUj5npA9Lhf3cbh_hajAS_zDPiX0pFaICAfJQk3S0Q0NVJW7izw793kGOQsx4hIRoZp9gwzCZMGDgkfpgw9Bxe4m1cS-NrxJgjgFnGY_BJMiuBVXLfLYXaB3I4aFTKfI2HP3m4tYJn4rFsGmibSGkO4mhc-_7nuM7cmFpBxYlOz9QXQZqYEkm7HR9KyJ8fq_L_wH-Ql1ithoODP28aiszYDDI4G8WAfBbtRxhXhgOploW_7-SjKxSDkIl_-JnrIrC7QK_CHm_ZRYFPugw1FfZRAkA24omoXdsmSznwyOrmIt26VG1Id59bqiN_NlMOQ-_e6k_ph76e2FX0NI80V897mUGOyJ24mchAiKIYK-mrM2Zmp4U95ZQKSLSk43Gw" />
          
 
           </div>
           </div>
-          <div className="h-[100%] xs:w-[100%] sm:w-[100%] md:w-[70%] lg:w-[30%]  p-3">
+          <div className="h-[100%] xs:w-[100%] mt-10 sm:w-[100%] md:w-[70%] lg:w-[30%]  p-3">
             <img
               src={process.env.REACT_APP_LOGO}
               className="rounded-full w-12 h-12 inline-block mx-4"

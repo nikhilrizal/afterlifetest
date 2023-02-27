@@ -51,7 +51,7 @@ export default function SimpleSlider() {
         />
       </div>
       <div className=" rounded-md">
-        <video className="w-25 h-20 rounded-md" controls autoPlay loop>
+        <video className="w-25 h-20 rounded-md" controls  loop>
           <source
             src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/mega-sale-instagram-video-post-design-template-a9f2e3449ca63a3c69632190767ff255.mp4?ts=1574600524"
             type="video/mp4"
@@ -67,7 +67,7 @@ export default function SimpleSlider() {
         />
       </div>
       <div className="rounded-md ">
-        <video className="w-25 h-20" controls autoPlay loop>
+        <video className="w-25 h-20" controls  loop>
           <source
             src="https://marketplace.canva.com/EAFQsyB-g8I/3/0/450w/canva-J8G9p65S1Ks.mp4"
             type="video/mp4"

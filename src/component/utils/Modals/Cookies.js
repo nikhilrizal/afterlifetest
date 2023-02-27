@@ -7,7 +7,7 @@ const Cookies = (props) => {
     
       <div className=" transform overflow-hidden w-[50vh] h-[60vh] max-w-md  relative rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
         <div className="flex flex-col justify-center items-center h-[80%] w-[100%] ">
-          <img className='lg:w-35vw md:w-25 xs:w-45 sm:w-45  lg:h-20vh md:h-35  sm:h-35 xs:h-35' src={cookie} alt="" srcset="" />
+          <img className='lg:w-35vw md:w-25 xs:w-52 sm:w-52  lg:h-20vh md:h-35  sm:h-52 xs:h-52' src={cookie} alt="" srcset="" />
           <h1 className='text-center text-black font-extrabold text-4xl'>
             Cookies !
           </h1>

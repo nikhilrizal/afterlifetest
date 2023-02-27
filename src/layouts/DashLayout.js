@@ -17,8 +17,8 @@ const DashoardLayout = ({ children }) => {
            <img src={logo} className="w-8 h-8 " alt="" />
           <p className="text-black mt-1">AFTERLIFE.COM</p>
           <div className="w-[92%]  flex justify-end">
-            <span className="bg-theme  w-8 h-8 rounded--full mt-1 relative">
-              <MdNotificationImportant className="text-white w-6 h-6 absolute top-1 left-1.5" />
+            <span className="bg-theme  w-8 h-8 rounded-full mt-1 relative">
+              <MdNotificationImportant className="text-white w-6 h-6 absolute top-1 left-1" />
             </span>
             <img
               className="w-8 h-8 m-1 mr-2 rounded-full border-theme border-2 z-120"
@@ -98,8 +98,8 @@ const DashoardLayout = ({ children }) => {
           </div>
         </div>
 
-        <div className="flex-1  bg-fixed  shadow-2xl  rounded-2xl z-50    w-[100%] h-[100%]  relative  overflow-x-auto lg:pb-[0vh] md:pb-[0vh] sm:pb-[60vh] xs:pb-[60vh]">
-          <div className="flex m-2 overflow-hidden  lg:flex-row md:flex-row-reverse sm:flex-col-reverse xs:flex-col-reverse w-[100%]  justify-center gap-2">
+        <div className="flex-1  p-4  bg-fixed  shadow-2xl  rounded-2xl z-50    w-[100%] h-[100%]  relative  overflow-x-hidden lg:pb-[0vh] md:pb-[0vh] sm:pb-[60vh] xs:pb-[60vh]">
+          <div className="flex  overflow-hidden  lg:flex-row md:flex-row-reverse sm:flex-col-reverse xs:flex-col-reverse w-[100%]  justify-center gap-2">
    
             <div className="w-[100%] z-20  mt-1 border-slate-200 border-2  text-black rounded-2xl h-[25vh] ">
               <div className="flex relative w-[100%] h-[90%]  mt-3">
@@ -108,7 +108,7 @@ const DashoardLayout = ({ children }) => {
                   <div className="flex justify-center "> 
               
                 
-                  <img className='absolute w-fit   h-full w-max-w-[100%] w-max-h-[100%]' src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-funeral-service-invite-flyer-design-template-c7a702b3b17584bde5dc8cecf071fcbb.jpg?ts=1636988155" alt="" srcset="" />
+                  <img className='absolute w-auto   h-full w-max-w-[100%] w-max-h-[90%]' src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-funeral-service-invite-flyer-design-template-c7a702b3b17584bde5dc8cecf071fcbb.jpg?ts=1636988155" alt="" srcset="" />
                   </div>
                 </div>
                 

@@ -24,6 +24,8 @@
   transform: scaleX(-1);
 }
 
+
+
 .sally {
   max-width: 120em !important;
   width: 14em !important;
@@ -39,7 +41,7 @@
 }
 body{
 
-        overflow-x: hidden !important;
+        overflow: hidden !important;
         cursor: pointer;
         background-color: white;
         font-family: Montserrat;
