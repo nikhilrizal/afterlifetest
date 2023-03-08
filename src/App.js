@@ -19,12 +19,13 @@ import VirtualDairy from "./pages/Diary/VirtualDairy";
 import DiaryPage from "./pages/Diary/DiaryPage";
 import { AddStory } from "./pages/Diary/AddStory";
 import { Book } from "./pages/Diary/Book";
+import { HashRouter } from "react-router-dom";
 
 function App() {
   const [isOpen, setIsOpen] = React.useState(true);
   return (
     <>
-      <BrowserRouter>
+      <HashRouter >
         <ToastContainer />
         <Routes>
           <Route path="/whatsapp" element={<WhatsappBot />} />
@@ -66,7 +67,7 @@ function App() {
             element={<div className="text-red-400 ">NO PAGE DOUND</div>}
           />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
