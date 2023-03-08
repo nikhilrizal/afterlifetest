@@ -23,10 +23,10 @@ const MenuItems = () => {
     return (
         <>
             {
-                links.map((link) => (
+                links.map((link,index) => (
 
                     <>
-                        <div key={link.to} className="flex  mt-5 text-gray-500     w-[100%] transition: ease-in-out delay-150 hover:-translate-x-1 hover:scale-11 duration-300  ">
+                        <div key={index} className="flex  mt-5 text-gray-500     w-[100%] transition: ease-in-out delay-150 hover:-translate-x-1 hover:scale-11 duration-300  ">
                             <NavLink className={({ isActive }) => (isActive ? "bg-[#00bfff21] rounded-lg text-[#00bfffde]" : "")} to={link.to}>
                                 <div className="flex hover:bg-[#00bfff21] hover:text-[#00bfffde] text-center items-center rounded-lg h-8 w-[100%]">
                                     {link.icons}

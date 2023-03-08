@@ -1,0 +1,21 @@
+.bird {
+  background-color: #c0cfe5 !important;
+  background-repeat: no-repeat !important;
+  background-position: left bottom;
+  overflow: auto !important;
+  background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9zdGF0aWMvZmlsZXMvd2Vic2l0ZS8yMDIyLTEyL3JtNjA0YmF0Y2gyLWJnLXRhLTA4LWEuanBn.jpg);
+  background-size: 590px;
+}
+body{
+    overflow: auto !important;
+    
+}
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .bird {
+    background: #c0cfe5 !important;
+    margin-bottom: 20em !important;
+  }
+
+
+}

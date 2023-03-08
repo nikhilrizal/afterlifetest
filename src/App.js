@@ -15,17 +15,21 @@ import RegistrationModal from "./component/utils/Modals/Registration";
 import SingleProductModal from "./component/utils/Modals/SingleProductModal";
 import Cookies from "./component/utils/Modals/Cookies";
 import React from "react";
+import VirtualDairy from "./pages/Diary/VirtualDairy";
+import DiaryPage from "./pages/Diary/DiaryPage";
+import { AddStory } from "./pages/Diary/AddStory";
+import { Book } from "./pages/Diary/Book";
 
 function App() {
-  const [isOpen, setIsOpen] = React.useState(true) 
+  const [isOpen, setIsOpen] = React.useState(true);
   return (
     <>
       <BrowserRouter>
         <ToastContainer />
         <Routes>
           <Route path="/whatsapp" element={<WhatsappBot />} />
-          <Route  path='Auth' element={<AutOutlet />}>
-            <Route  index element={<LoginPage />} />
+          <Route path="Auth" element={<AutOutlet />}>
+            <Route index element={<LoginPage />} />
             <Route path="Signup" element={<Signup />} />
             <Route path="restpassword" element={<RestPassword />} />
           </Route>
@@ -34,19 +38,33 @@ function App() {
             <Route path="RecentWork" element={<RecentsDesign />} />
             <Route path="Customer" element={<RecentsDesign />} />
           </Route>
-          <Route index  element={<Test />} />
-          <Route path='modal1' element={<RegistrationModal  isOpen={isOpen} setIsOpen={setIsOpen}/>} />
-
-          <Route path='modal2' element={<Cookies isOpen={isOpen} setIsOpen={setIsOpen}/>} />
-          <Route path='modal3' element={<SingleProductModal isOpen={isOpen} setIsOpen={setIsOpen}/>} />
-          
+          <Route index element={<Test />} />
           <Route
-            
+            path="modal1"
+            element={
+              <RegistrationModal isOpen={isOpen} setIsOpen={setIsOpen} />
+            }
+          />
+
+          <Route
+            path="modal2"
+            element={<Cookies isOpen={isOpen} setIsOpen={setIsOpen} />}
+          />
+          <Route
+            path="modal3"
+            element={
+              <SingleProductModal isOpen={isOpen} setIsOpen={setIsOpen} />
+            }
+          />
+          <Route path="VirtualBook" element={<VirtualDairy />} />
+          <Route path="StartBook" element={<DiaryPage />} />
+          <Route path="AddStory" element={<AddStory />} />
+          <Route path="Book" element={<Book />} />
+
+          <Route
             path="*"
-  
             element={<div className="text-red-400 ">NO PAGE DOUND</div>}
-         
-         />
+          />
         </Routes>
       </BrowserRouter>
     </>
